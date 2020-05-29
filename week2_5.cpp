@@ -20,6 +20,10 @@ int main() {
     cout << "Enter step... ";
     cin >> tab;
 
+    ofstream fout;
+    fout.open("data.txt");
+    fout.close();
+
     if(n<=0){
        cout << "Invalid input. n <= 0." << endl;
     }
